@@ -112,6 +112,7 @@ p{
 }
 
 .first-page{
+    vertical-align: top;
     height: 75vh;
     width: 850px;
     display: inline-block;
@@ -138,6 +139,7 @@ p{
 }
 
 .second-page{
+    vertical-align: top;
     height: 75vh;
     width: 850px;
     display: inline-block;
@@ -157,7 +159,7 @@ p{
         font-family: 'Helvetica Neue', sans-serif;
     }
     .p-container{
+        padding: 0px 25px;
         text-wrap: wrap;
-        width: 800px;
     }
 }

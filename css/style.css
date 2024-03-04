@@ -84,12 +84,14 @@ p{
     background-color: var(--color-theme-accent);
     display: flex;
     align-items: center;
-    img{
+    img, button{
+        border: 0px;
+        background-color: transparent;
         cursor: pointer;
-        height: 70%;
+        height: 80%;
         margin: 0 auto;
         position: relative;
-        filter: drop-shadow(3px 3px 3px #000);
+        filter: drop-shadow(3px 3px 3px #0000006d);
     }
 }
 

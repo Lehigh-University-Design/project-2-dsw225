@@ -1,0 +1,67 @@
+:root {
+    --color-theme: #F2F2F2;
+    --color-theme-accent: #84D6C5;
+    --color-theme-dark: #182628;
+}
+
+@font-face {
+    font-family: 'Phosphate';
+    src: url('../fonts/PhosphatePro-Inline.otf') format('opentype'); /* https://css-tricks.com/snippets/css/using-font-face-in-css/ */
+}
+
+body {
+    background-color: var(--color-theme);
+    color: var(--color-theme-dark);
+    margin: 0px;
+  }
+  
+.first-block{
+    background-image: url(../images/Ball\ Expanded2.jpg);
+    background-size: cover;
+    background-position: center;
+    text-shadow: 3px 3px #000;
+    color: var(--color-theme);
+    @media screen and (min-height: 648px) {
+        min-height: calc(100vh); /* 85 px */
+    }
+    @media screen and (max-height: 648px) {
+        min-height: 648px; /* 85 px for nav and 20 px for padding */
+    }
+    display: flex;
+    align-items: center; /* Align items at the start (top) */
+    position: relative;
+}
+
+.first-contain{
+    width:800px; 
+    margin:0 auto;
+    align-items: center;
+}
+
+.header-contain {
+    text-transform: uppercase;
+    font-family: 'Phosphate', sans-serif;
+    color: var(--text-color);
+    text-align: left;
+
+    font-size: 40px;
+    margin: auto;
+}
+
+.sub-header-contain{
+    font-family: 'Futura', sans-serif;
+    color: var(--text-color);
+    text-align: left;
+
+    font-size: 20px;
+    margin: auto;
+}
+
+
+p{
+    margin:0;
+    font-size: 20px;
+}
+
+.content-wrapper {
+}

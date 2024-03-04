@@ -19,7 +19,7 @@ body {
     background-image: url(../images/Ball\ Expanded2.jpg);
     background-size: cover;
     background-position: center;
-    text-shadow: 3px 3px 3px #000;
+    text-shadow: 3px 3px 3px #0000004d;
     color: var(--color-theme);
     min-height: calc(100vh);
     display: flex;
@@ -41,7 +41,7 @@ body {
 
     font-size: 50px;
     margin: auto;
-    margin-top: 350px;
+    margin-top: 30vh;
 }
 
 .sub-header-contain{
@@ -53,8 +53,6 @@ body {
     font-size: 35px;
     margin: auto;
 }
-
-
 
 h1{
     margin:20px;
@@ -91,13 +89,13 @@ p{
         height: 80%;
         margin: 0 auto;
         position: relative;
-        filter: drop-shadow(3px 3px 3px #0000006d);
+        filter: drop-shadow(3px 3px 3px #00000021);
     }
 }
 
 .page{
-    min-height: calc(100vh - 300px);
-    padding: 150px 0px;
+    min-height: calc(100vh - 200px);
+    padding: 100px 0px;
     width:850px; 
     margin:0 auto;
 }
@@ -106,16 +104,17 @@ p{
     margin: 4px, 4px;
     padding: 4px;
     width: 850px;
-    height: 75vh;
+    height: 80vh;
     white-space: nowrap;
     position: relative;
     overflow-x: scroll;
+    overflow: hidden;
     overflow-y: hidden;
 }
 
 .first-page{
     vertical-align: top;
-    height: 75vh;
+    height: 80vh;
     width: 850px;
     display: inline-block;
     h1{
@@ -142,7 +141,7 @@ p{
 
 .second-page{
     vertical-align: top;
-    height: 75vh;
+    height: 80vh;
     width: 850px;
     display: inline-block;
     h1{
@@ -164,4 +163,34 @@ p{
         padding: 0px 25px;
         text-wrap: wrap;
     }
+}
+
+#myBackImage, #myBackButton{
+    display: flex;
+    justify-content:left; /* Horizontal alignment */
+    padding-left: 15%;
+    padding-top: calc(25vh);
+    float: left;
+    border: 0px;
+    background-color: transparent;
+    cursor: pointer;
+    height: 80px;
+    margin: 0 auto;
+    position: relative;
+    filter: drop-shadow(3px 3px 3px #00000021);
+}
+
+#myForwardImage, #myForwardButton{
+    display: flex;
+    justify-content:right; /* Horizontal alignment */
+    padding-right: 15%;
+    padding-top: calc(25vh);
+    float: right;
+    border: 0px;
+    background-color: transparent;
+    cursor: pointer;
+    height: 80px;
+    margin: 0 auto;
+    position: relative;
+    filter: drop-shadow(3px 3px 3px #00000021);
 }

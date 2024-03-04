@@ -23,14 +23,22 @@
             </div>
           </div>
           <div id="box">
-            <button onClick="document.getElementById('page').scrollIntoView({ behavior: 'smooth'});" id="myButton">
+            <button onClick="document.getElementById('page').scrollIntoView({ behavior: 'smooth'});">
               <img src="../images/Scroll-Beige.png">
             </button>
           </div>
 
+          <button onClick="document.getElementById('scroll').scrollBy({left: -850, behavior: 'smooth'})" id="myBackButton">
+            <img src="../images/Scroll-Green-Left.png" id="myBackImage">
+          </button>
+
+          <button onClick="document.getElementById('scroll').scrollBy({left: 850, behavior: 'smooth'})" id="myForwardButton">
+            <img src="../images/Scroll-Green-Right.png" id="myForwardImage">
+          </button>
+
           <div class="page" id="page">
-            <div class="scroll">
-              <div class="first-page">
+            <div class="scroll" id="scroll">
+              <div class="first-page" id="first">
                 <h1>INTRODUCTION</h1>
                 <img src="images/IMG_3559.JPG">
                 <div class="p-container">
@@ -39,7 +47,7 @@
                     The main issue I see with most golfers my age, is that when there scores are high, they go to the range and practice the same things over and over again. However, as the saying goes “DRIVE FOR SHOW AND PUTT FOR DOUGH.” While this statement is not entirely accurate, it does highlight the existence of some sort of ego-boost, which people focus too heavily on.</p>
                 </div>
               </div>
-              <div class="second-page">
+              <div class="second-page" id="second">
                 <h1>1. FOCUS ON SHORT GAME</h1>
                 <div class="p-container">
                   <p>In order to lower your scores, amateur golfers should mainly focus on their short game When Tiger Woods was growing up, his father took the opposite approach to most parents and taught him to putt, chip, and get out of the sand first, before teaching him how to swing. Tiger says that starting from the green and moving out was one of the many reasons he was able to succeed at such a young age; since he was better than nearly everyone around the green. While it also helps to be the arguably best driver of all time, many can hit it as far as him, yet are nowhere as near as successful</p>

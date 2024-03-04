@@ -19,21 +19,16 @@ body {
     background-image: url(../images/Ball\ Expanded2.jpg);
     background-size: cover;
     background-position: center;
-    text-shadow: 3px 3px #000;
+    text-shadow: 3px 3px 3px #000;
     color: var(--color-theme);
-    @media screen and (min-height: 648px) {
-        min-height: calc(100vh); /* 85 px */
-    }
-    @media screen and (max-height: 648px) {
-        min-height: 648px; /* 85 px for nav and 20 px for padding */
-    }
+    min-height: calc(100vh);
     display: flex;
     align-items: center; /* Align items at the start (top) */
     position: relative;
 }
 
 .first-contain{
-    width:800px; 
+    width:850px; 
     margin:0 auto;
     align-items: center;
 }
@@ -44,19 +39,32 @@ body {
     color: var(--text-color);
     text-align: left;
 
-    font-size: 40px;
+    font-size: 50px;
     margin: auto;
+    margin-top: 350px;
 }
 
 .sub-header-contain{
     font-family: 'Futura', sans-serif;
+    font-weight: 400;
     color: var(--text-color);
     text-align: left;
 
-    font-size: 20px;
+    font-size: 35px;
     margin: auto;
 }
 
+
+
+h1{
+    margin:20px;
+    font-weight: 400;
+}
+
+h2{
+    margin:20px;
+    font-weight: 400;
+}
 
 p{
     margin:0;
@@ -64,4 +72,92 @@ p{
 }
 
 .content-wrapper {
+}
+
+#box{
+    position: absolute;
+    width: 100%;
+    margin-top: -125px;
+    z-index: 1;
+    height: 125px;
+    color: var(--color-theme-accent);
+    background-color: var(--color-theme-accent);
+    display: flex;
+    align-items: center;
+    img{
+        cursor: pointer;
+        height: 70%;
+        margin: 0 auto;
+        position: relative;
+        filter: drop-shadow(3px 3px 3px #000);
+    }
+}
+
+.page{
+    min-height: calc(100vh - 300px);
+    padding: 150px 0px;
+    width:850px; 
+    margin:0 auto;
+}
+
+.scroll {
+    margin: 4px, 4px;
+    padding: 4px;
+    width: 850px;
+    height: 75vh;
+    white-space: nowrap;
+    position: relative;
+    overflow-x: scroll;
+    overflow-y: hidden;
+}
+
+.first-page{
+    height: 75vh;
+    width: 850px;
+    display: inline-block;
+    h1{
+        font-family: 'Futura', sans-serif;
+        font-weight: 400;
+        color: var(--color-theme-accent);
+        font-size: 55px;
+    }
+    img{
+        float: left;
+        margin-left: 25px;
+        height: 650px;
+    }
+    p {
+        color: var(--color-theme-dark);
+        font-family: 'Helvetica Neue', sans-serif;
+    }
+    .p-container{
+        text-wrap: wrap;
+        margin-left: 365px;
+        width: 450px;
+    }
+}
+
+.second-page{
+    height: 75vh;
+    width: 850px;
+    display: inline-block;
+    h1{
+        font-family: 'Futura', sans-serif;
+        font-weight: 400;
+        color: var(--color-theme-accent);
+        font-size: 55px;
+    }
+    img{
+        float: left;
+        margin-left: 25px;
+        height: 650px;
+    }
+    p {
+        color: var(--color-theme-dark);
+        font-family: 'Helvetica Neue', sans-serif;
+    }
+    .p-container{
+        text-wrap: wrap;
+        width: 800px;
+    }
 }

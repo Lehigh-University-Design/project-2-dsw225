@@ -114,6 +114,7 @@ p{
 
 .first-page{
     vertical-align: top;
+    padding-top: 10vh;
     height: 80vh;
     width: 850px;
     display: inline-block;
@@ -142,6 +143,7 @@ p{
 .second-page{
     vertical-align: top;
     height: 80vh;
+    padding-top: 10vh;
     width: 850px;
     display: inline-block;
     h1{
@@ -169,6 +171,7 @@ p{
 .third-page{
     vertical-align: top;
     height: 80vh;
+    padding-top: 10vh;
     width: 850px;
     display: inline-block;
     h1{
@@ -204,7 +207,7 @@ iframe {
 #myBackImage, #myBackButton{
     display: flex;
     justify-content:left; /* Horizontal alignment */
-    padding-left: 15%;
+    padding-left: 10%;
     padding-top: calc(25vh);
     float: left;
     border: 0px;
@@ -219,7 +222,7 @@ iframe {
 #myForwardImage, #myForwardButton{
     display: flex;
     justify-content:right; /* Horizontal alignment */
-    padding-right: 15%;
+    padding-right: 10%;
     padding-top: calc(25vh);
     float: right;
     border: 0px;
